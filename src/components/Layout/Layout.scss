@@ -1,0 +1,28 @@
+.layout {
+  display: flex;
+  
+  .sidebar {
+    width: 30vw;
+    height: 100vh;
+    overflow-y: auto;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        padding: .75rem;
+        cursor: pointer;
+        
+        &:nth-child(2n) {
+          background-color: rgba(135,206,250,.5);
+        }
+
+        &:hover {
+          background-color: #87CEFA;
+        }
+      }
+    }
+  }
+}
